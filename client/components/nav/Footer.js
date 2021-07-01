@@ -2,62 +2,98 @@ import Link from "next/link";
 import { TwitterOutlined } from "@ant-design/icons";
 
 const Footer = () => (
-  <div
-    className="container-fluid footer mt-5"
-    style={{ borderTop: "1px solid #333" }}
-  >
-    <footer className="pt-5 pb-4">
+  <footer>
+    <div className="container">
       <div className="row">
-        <div className="col-md-4">
-          <Link href="/">
-            <a>
-              <img
-                style={{ marginTop: "-10px" }}
-                className="img-fluid mb-2"
-                src="/images/logo/codecontinue.png"
-                alt="codecontinue Logo"
-              />
-            </a>
-          </Link>
+        <div className="col-3">
+          <img className="img-logo" src="./images/logo/logo.png" alt="" />
+          <ul>
+            <li>
+              <p>F8 là nơi học lập trình miễn phí.</p>
+            </li>
+            <li>
+              <p>
+                Các khoá học được đầu tư kỹ lưỡng từ nội dung tới chất lượng
+                hình ảnh và âm thanh.
+              </p>
+            </li>
+            <li>
+              <p>
+                Học viên có thể học từ con số 0 tới khi trở thành lập trình viên
+                chuyên nghiệp tại đây.
+              </p>
+            </li>
 
-          <small className="ml-2 d-block mb-3 text-muted">
-            &copy; {new Date().getFullYear()}
-          </small>
+            <li>
+              <p>© 2019 MyCV JSC. All rights reserved. </p>
+            </li>
+          </ul>
+        </div>
+        <div className="col-6">
+          <div className="row">
+            <div className="col-4">
+              <h6 className="main-title">F8</h6>
+              <ul>
+                <li>
+                  <a href="">Giới thiệu</a>
+                </li>
+
+                <li>
+                  <a href="">Câu hỏi thường gặp</a>
+                </li>
+
+                <li>
+                  <a href="">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="col-4">
+              <h6 className="main-title">Sản phẩm</h6>
+              <ul>
+                <li>
+                  <a href="">MyCV.vn</a>
+                </li>
+
+                <li>
+                  <a href="">Fullstack.edu.vn</a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-4">
+              <h6 className="main-title">Hỗ trợ</h6>
+              <ul>
+                <li>
+                  <a href="">Hỗ trợ</a>
+                </li>
+
+                <li>
+                  <a href="">Đóng góp</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div className="col-md-4">
-          <h5>Code Continue</h5>
-          <p className="lead">
-            Join thousands of students at codecontinue and become part of a
-            vibrant community. Learn the best of web development or become an
-            instructor and teach others by creating courses.
+        <div className="col-3">
+          <h6 className="main-title">Theo dõi chúng tôi</h6>
+          <p className="enter-email">
+            Nhập email để đăng ký nhận những thông tin hữu ích về học tập từ F8
           </p>
-          <hr />
-          <p className="lead">Find us on twitter</p>
-          <a
-            style={{ paddingTop: "2px" }}
-            className="lead"
-            href="https://twitter.com/CodeContinue?ref_src=twsrc%5Etfw"
-            target="_blank"
-          >
-            <TwitterOutlined /> @CodeContinue
-          </a>
-        </div>
 
-        <div className="col-md-4">
-          <h5 className="pb-1">Become an instructor</h5>
-          <p className="lead">
-            The only eLearning marketplace that offers 70% revenue to it's
-            instructors. Get paid directly to your bank account, every 48 hours.
-            Are you ready to create your first course?
-          </p>
-          <Link href="/user/become-instructor">
-            <a className="lead">Become Instructor</a>
-          </Link>
+          <input
+            className="register-email"
+            type="email"
+            name=""
+            id=""
+            placeholder="Email của bạn..."
+          />
+
+          <button className="register-button">Đăng ký</button>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 );
 
 export default Footer;

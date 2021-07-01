@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,900;1,100;1,200;1,300&display=swap');
+
 .square {
   border-radius: 0px;
 }
@@ -76,4 +78,78 @@ blockquote p {
   to {
     width: 100%;
   }
+}
+
+
+/* footer */
+
+
+footer {
+  background-color: #151515;
+  padding: 80px 0;
+}
+
+.img-logo{
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+ul>li{
+  list-style: none;
+  color: hsla(0,0%,100%,.7);
+  margin-bottom: 20px;
+}
+ul> li:last-child p{
+  margin-top: 30px;
+  font-size: 13px;
+}
+ul>li>a{
+  color: hsla(0,0%,100%,.7);
+  font-size: 16px;
+}
+
+ul>li>p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  
+  color: hsla(0,0%,100%,.7);
+  margin-bottom: 0;
+
+}
+p.enter-email{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  
+  color: hsla(0,0%,100%,.7);
+  margin-bottom: 0;
+}
+
+.main-title{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+
+  margin-bottom: 41px ;
+}
+
+input.register-email {
+  margin-top: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 8px 15px;
+}
+
+button.register-button {
+  padding: 8px 9px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  border: none;
 }
