@@ -21,20 +21,6 @@ const UserNav = () => {
         </a>
       </Link>
 
-      <Link href="/user/support">
-        <a className={`nav-link ${current === "/user/support" && "active"}`}>
-          Help and Support
-        </a>
-      </Link>
-
-      {user && user.courses && user.courses.length >= 1 && (
-        <Link href="/user/qa">
-          <a className={`nav-link ${current === "/user/qa" && "active"}`}>
-            Q&A
-          </a>
-        </Link>
-      )}
-
       {/* <Link href="/user/courses">
         <a className={`nav-link ${current === "/user/courses" && "active"}`}>
           Your Courses

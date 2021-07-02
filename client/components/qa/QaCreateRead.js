@@ -71,12 +71,7 @@ const QaCreateRead = ({
         onCancel={() => setVisible(false)}
         footer={null}
       >
-        <div
-          onClick={() => setMarkdownCheetsheetModal(!markdownCheetsheetModal)}
-          className="text-center mb-4 pointer"
-        >
-          <b>Learn</b> to <i>write</i> in <code>markdown</code>
-        </div>
+        
         <MarkdownCheetsheet
           markdownCheetsheetModal={markdownCheetsheetModal}
           setMarkdownCheetsheetModal={setMarkdownCheetsheetModal}

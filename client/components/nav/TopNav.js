@@ -84,32 +84,16 @@ const TopNav = () => {
             <a className="typewriter">
               <div className="pt-1">
                 <img
-                  src="/images/logo/codecontinue.png"
-                  alt="code continue logo"
+                  src="/images/logo/LOGO.png"
+                  alt="VietEdu logo"
                   height="40"
+                  width="70"
                   className="mb-1"
                 />
               </div>
             </a>
           </Link>
         </Item>
-
-        <Item icon={<ReadOutlined />} key="/articles">
-          <Link href="/articles">
-            <a className="typewriter">Articles</a>
-          </Link>
-        </Item>
-
-        {user && user.role && user.role.includes("Author") ? (
-          <></>
-        ) : (
-          <Item icon={<FormOutlined />} key="/user/become-author">
-            <Link href="/user/become-author">
-              <a className="typewriter">Become Author</a>
-            </Link>
-          </Item>
-        )}
-
         {user &&
         user.role &&
         user.stripe_seller &&
@@ -177,22 +161,6 @@ const TopNav = () => {
               </Link>
             </Item>
           )}
-
-        {user && user.courses && user.courses.length >= 1 && (
-          <Item icon={<DesktopOutlined />} key="/user" className="float-right">
-            <Link href="/user">
-              <a className="typewriter">Student</a>
-            </Link>
-          </Item>
-        )}
-
-        {user && user.role && user.role.includes("Author") && (
-          <Item icon={<EditOutlined />} key="/author" className="float-right">
-            <Link href="/author">
-              <a className="typewriter">Author</a>
-            </Link>
-          </Item>
-        )}
 
         {user && user.role && user.role.includes("Admin") && (
           <Item icon={<AudioOutlined />} key="/admin" className="float-right">

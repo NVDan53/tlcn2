@@ -42,14 +42,6 @@ const CourseCreateForm = ({
           />
         </div>
 
-        <div
-          onClick={() => setMarkdownCheetsheetModal(!markdownCheetsheetModal)}
-          className="text-center mb-4 pointer"
-          style={{ height: "10px" }}
-        >
-          <b>Learn</b> to <i>write</i> in <code>markdown</code>
-        </div>
-
         <div className="form-row">
           <div className="col">
             <textarea

@@ -14,8 +14,8 @@ const Footer = () => (
               <img
                 style={{ marginTop: "-10px" }}
                 className="img-fluid mb-2"
-                src="/images/logo/codecontinue.png"
-                alt="codecontinue Logo"
+                src="/images/logo/LOGO.png"
+                alt="VietEdu Logo"
               />
             </a>
           </Link>

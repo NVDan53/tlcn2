@@ -318,7 +318,9 @@ const SingleCourse = () => {
 
   return (
     <StudentRoute>
-      <div className="row">
+      <div className="row"style={{ backgroundImage: "url(/images/logo/bg.jpg)" }}>
+        
+      
         {/* {JSON.stringify(completedLessons)} */}
         <div style={{ maxWidth: 320 }}>
           <Button
@@ -492,21 +494,16 @@ const SingleCourse = () => {
             </>
           ) : (
             <div className="d-flex justify-content-center p-5">
-              <div className="text-center p-5">
-                {/* <div className="pt-5"></div> */}
-                <PlayCircleOutlined className="text-primary display-1 p-5" />
-                <h2>Start Learning</h2>
-                <p className="lead">
-                  Click the lessons on the sidebar to start.
-                </p>
-              </div>
+             
             </div>
           )}
         </div>
 
         <br />
         <br />
+       
       </div>
+      
     </StudentRoute>
   );
 };

@@ -15,28 +15,9 @@ const AdminNav = () => {
           Dashboard
         </a>
       </Link>
-
-      <Link href="/admin/users">
-        <a className={`nav-link ${current === "/admin/users" && "active"}`}>
-          Users
-        </a>
-      </Link>
-
       <Link href="/admin/category">
         <a className={`nav-link ${current === "/admin/category" && "active"}`}>
           Categories
-        </a>
-      </Link>
-
-      <Link href="/admin/issues">
-        <a className={`nav-link ${current === "/admin/issues" && "active"}`}>
-          Issues
-        </a>
-      </Link>
-
-      <Link href="/admin/posts">
-        <a className={`nav-link ${current === "/admin/posts" && "active"}`}>
-          Posts
         </a>
       </Link>
     </div>
