@@ -4,6 +4,9 @@ import { useRouter } from "next/router";
 import { SyncOutlined } from "@ant-design/icons";
 import AdminNav from "../nav/AdminNav";
 
+
+
+
 const AdminRoute = ({ children }) => {
   const [ok, setOk] = useState(false);
   const router = useRouter();
@@ -28,10 +31,11 @@ const AdminRoute = ({ children }) => {
     <SyncOutlined
       spin
       className="d-flex justify-content-center display-1 text-primary p-5"
+      
     />
   ) : (
-    <div className="container-fluid">
-      <div className="row">
+    <div className="container-fluid" >
+      <div className="row" >
         <div className="col-md-2">
           <AdminNav />
         </div>

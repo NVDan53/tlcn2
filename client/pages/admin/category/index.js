@@ -99,8 +99,8 @@ const AdminCategoryIndex = () => {
       />
       <hr />
       {categories.map((c) => (
-        <div className="d-inline-flex p-1" key={c._id}>
-          <span className="badge badge-pill badge-secondary p-2">
+        <div className="d-inline-flex p-2" key={c._id} >
+          <span className="badge badge-pill badge-secondary p-3 " style={{color:'black' , backgroundColor:'#1E90FF',  } }>
             <Tooltip
               title={
                 <>

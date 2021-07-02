@@ -4,25 +4,28 @@ const CategoryForm = ({ handleSubmit, name, setName, loading }) => {
   return (
     <div className="container pt-3">
       <form onSubmit={handleSubmit}>
-        <div className="d-table-cell w-100">
+        <div className="d-table-cell w-100" style={{}}>
           <input
+           
             type="text"
             className="form-control square"
             onChange={(e) => setName(e.target.value)}
             value={name}
             placeholder="Catgory name"
-            style={{ height: "40px" }}
+            style={{ height: "40px" ,
+            }}
             autoFocus
             required
           />
         </div>
-        <div className="d-table-cell align-middle">
+        <div className="d-table-cell align-middle" >
           <Button
             onClick={handleSubmit}
-            className="btn btn-primary square"
+            className="btn btn-primary square ml-3"
             size="large"
             loading={loading}
-          >
+          
+            style={{color:'black' , backgroundColor:'#1E90FF' } }>
             Save
           </Button>
         </div>
