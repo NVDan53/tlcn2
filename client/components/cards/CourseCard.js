@@ -11,28 +11,21 @@ const CourseCard = ({ course }) => {
     <Link href="/course/[slug]" as={`/course/${slug}`}>
       <a>
         <Card
-          className="mb-4"
+          className="mb-4 bg-gray-50 rounded-3xl"
           cover={
             <img
               src={image.Location}
               alt={name}
               style={{ height: "200px", objectFit: "cover" }}
-              className="p-1"
+              className=""
             />
           }
         >
-          <h2 className="h4 font-weight-bold">{name}</h2>
-          <p>by {instructor.name}</p>
+          <h2 className="text-left text-xl text-red font-semibold ">{name}</h2>
+          <p className="text-left"> {instructor.name}</p>
 
-          {categories.map((c) => (
-            <Badge
-              count={c.name}
-              style={{ backgroundColor: "#03a9f4" }}
-              className="pb-2 mr-2"
-            />
-          ))}
-
-          <h4 className="pt-2">
+        
+          <h4 className="text-right text-xl text-yellow-400 font-semibold mt-1 ">
             {paid
               ? currencyFormatter({
                   amount: price,

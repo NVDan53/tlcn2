@@ -33,7 +33,7 @@ const RegisterActivate = () => {
       let { data } = await axios.post(`/api/register-activate`, { jwtLink });
 
       if (data.ok) {
-        toast("Registration successful. Please login");
+        toast("Bạn đã đăng ký thành công. Hãy đăng nhập");
         router.push("/login");
       }
     } catch (err) {

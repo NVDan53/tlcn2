@@ -35,5 +35,10 @@
     "react-toastify": "^7.0.2",
     "remark-rehype": "^8.1.0",
     "style-to-object": "^0.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   }
 }

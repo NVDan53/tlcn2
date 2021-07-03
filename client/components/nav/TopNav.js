@@ -83,12 +83,7 @@ const TopNav = () => {
           <Link href="/">
             <a className="typewriter">
               <div className="pt-1">
-                <img
-                  src="/images/logo/codecontinue.png"
-                  alt="code continue logo"
-                  height="40"
-                  className="mb-1"
-                />
+                
               </div>
             </a>
           </Link>

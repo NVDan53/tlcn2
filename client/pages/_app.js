@@ -12,7 +12,7 @@ import "nprogress/nprogress.css";
 import Footer from "../components/nav/Footer";
 import ScrollToTop from "react-scroll-up";
 import { UpCircleOutlined } from "@ant-design/icons";
-
+import 'tailwindcss/tailwind.css'
 Router.onRouteChangeStart = (url) => NProgress.start();
 Router.onRouteChangeComplete = (url) => NProgress.done();
 Router.onRouteChangeError = (url) => NProgress.done();
