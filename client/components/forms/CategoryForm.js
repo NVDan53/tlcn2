@@ -11,7 +11,7 @@ const CategoryForm = ({ handleSubmit, name, setName, loading }) => {
             className="form-control square"
             onChange={(e) => setName(e.target.value)}
             value={name}
-            placeholder="Catgory name"
+            placeholder="Tên danh mục"
             style={{ height: "40px" ,
             }}
             autoFocus
@@ -26,7 +26,7 @@ const CategoryForm = ({ handleSubmit, name, setName, loading }) => {
             loading={loading}
           
             style={{color:'black' , backgroundColor:'#1E90FF' } }>
-            Save
+            Lưu
           </Button>
         </div>
       </form>

@@ -84,7 +84,7 @@ const TopNav = () => {
             <a className="typewriter">
               <div className="pt-1">
                 <img
-                  src="/images/logo/LOGO.png"
+                  src="/images/logo/LOGO1.png"
                   alt="VietEdu logo"
                   height="40"
                   width="70"

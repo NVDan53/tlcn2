@@ -329,7 +329,7 @@ const SingleCourse = () => {
             disabled={onlyWidth < 800}
           >
             {createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined)}
-            {!collapsed && "Lessons"}
+            {!collapsed && "Bài học"}
           </Button>
 
           {/* how many completed */}
@@ -339,7 +339,7 @@ const SingleCourse = () => {
               <span className="text-success">{completedLessons.length}</span>
               {" / "}
               <span className="text-danger">{course.lessons.length}</span>{" "}
-              lessons completed
+              Bài học đã hoàn thành
             </div>
           )}
 
@@ -398,11 +398,11 @@ const SingleCourse = () => {
                     className="float-right pointer"
                     onClick={markIncomplete}
                   >
-                    Mark incomplete
+                    Bỏ đánh dấu hoàn thành
                   </span>
                 ) : (
                   <span className="float-right pointer" onClick={markCompleted}>
-                    Mark as completed
+                    Đánh dấu đã hoàn thành
                   </span>
                 )}
               </div>

@@ -37,7 +37,7 @@ const AdminCategoryIndex = () => {
       // console.log(data);
       setName("");
       setLoading(false);
-      toast("Category created");
+      toast("Danh mục đã được tạo");
       // update state
       setCategories([data, ...categories]);
     } catch (err) {
@@ -52,7 +52,7 @@ const AdminCategoryIndex = () => {
       let { data } = await axios.delete(`/api/category/${c.slug}`);
       // console.log(c.slug);
 
-      toast(`${data.name} is deleted`);
+      toast(`${data.name} đã xóa`);
       // update state
       let filtered = categories.filter((category) => category.slug !== c.slug);
       setCategories(filtered);
@@ -74,7 +74,7 @@ const AdminCategoryIndex = () => {
     try {
       let { data } = await axios.put(`/api/category/${slug}`, { name });
       // console.log("updated", data);
-      toast(`${data.name} is updated`);
+      toast(`${data.name} đã được cập nhật`);
       // update state, first remove updated category
       let filtered = categories.filter((category) => category.slug !== slug);
       // insert updated category

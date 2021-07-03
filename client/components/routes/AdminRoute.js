@@ -35,7 +35,7 @@ const AdminRoute = ({ children }) => {
     />
   ) : (
     <div className="container-fluid" >
-      <div className="row" >
+      <div className="row" style={{ backgroundImage: "url(/images/logo/bg.jpg)" }}>
         <div className="col-md-2">
           <AdminNav />
         </div>
